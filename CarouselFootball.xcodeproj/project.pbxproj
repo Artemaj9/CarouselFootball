@@ -11,6 +11,7 @@
 		AC2AD51E2B8D361900BC2183 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2AD51D2B8D361900BC2183 /* ContentView.swift */; };
 		AC2AD5202B8D361A00BC2183 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC2AD51F2B8D361A00BC2183 /* Assets.xcassets */; };
 		AC2AD5232B8D361A00BC2183 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC2AD5222B8D361A00BC2183 /* Preview Assets.xcassets */; };
+		AC2AD52A2B8D366900BC2183 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2AD5292B8D366900BC2183 /* CarouselView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		AC2AD51D2B8D361900BC2183 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AC2AD51F2B8D361A00BC2183 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC2AD5222B8D361A00BC2183 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AC2AD5292B8D366900BC2183 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				AC2AD51B2B8D361900BC2183 /* CarouselFootballApp.swift */,
 				AC2AD51D2B8D361900BC2183 /* ContentView.swift */,
+				AC2AD5292B8D366900BC2183 /* CarouselView.swift */,
 				AC2AD51F2B8D361A00BC2183 /* Assets.xcassets */,
 				AC2AD5212B8D361A00BC2183 /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC2AD51E2B8D361900BC2183 /* ContentView.swift in Sources */,
+				AC2AD52A2B8D366900BC2183 /* CarouselView.swift in Sources */,
 				AC2AD51C2B8D361900BC2183 /* CarouselFootballApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

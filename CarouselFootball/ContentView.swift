@@ -1,21 +1,37 @@
 //
-//  ContentView.swift
 //  CarouselFootball
-//
-//  Created by Artem on 27.02.2024.
 //
 
 import SwiftUI
 
 struct ContentView: View {
+    @State var textfield_val = ""
+    @State var heartFilled = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        CarouselView(itemHeight: 500, views: [
+            AnyView(Circle().frame(width: 50, height: 50).foregroundColor(.red)),
+            AnyView(Text("b")),
+            AnyView(TextField("placeholder", text: $textfield_val).padding().multilineTextAlignment(.center)),
+            AnyView(
+                VStack {
+                    if heartFilled {
+                        Image(systemName: "heart")
+                    } else {
+                        Image(systemName: "heart.fill")
+                    }
+                }
+            ),
+            AnyView(Text("the textfield said '\(textfield_val == "" ? "..." : textfield_val)'")),
+            AnyView(
+                Button(action: {self.heartFilled.toggle()}) {
+                    Text("Fill the heart")
+                }
+            ),
+            AnyView(Text("Last View")),
+            AnyView(Text("Last View")),
+            AnyView(Text("Last View"))
+            ])
     }
 }
 
